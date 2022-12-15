@@ -10,16 +10,14 @@ body {
 	border-radius: 100%;
 	background: var(--animated-item-color);
 	animation: glow-animation 3s ease-in-out alternate infinite;
+	display: inline-block;
 }
 
 @keyframes glow-animation {
 	0% {
-		filter: saturate(.6) drop-shadow(0 0 0 var(--animated-item-color));
-	}
-	50% {
-		filter: saturate(.8) drop-shadow(0 0 0 var(--animated-item-color));
+		filter: saturate(.7) brightness(1.1) drop-shadow(0 0 0 var(--animated-item-color));
 	}
 	100% {
-		filter: saturate(1) drop-shadow(0 0 15px var(--animated-item-color));
+		filter: saturate(1) brightness(1) drop-shadow(0 0 15px var(--animated-item-color));
 	}
 }
