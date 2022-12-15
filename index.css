@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	width: 100%;
+	background: #de98eb;
+}
+
+#BG1 {
+	min-height: 100vh;
+	margin-left: 1in;
+	margin-right: 1in;
+	width: calc(100% - 2in);
+	background: #141414;
+}
