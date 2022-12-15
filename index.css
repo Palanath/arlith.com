@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	width: 100%;
 	background: #141414;
+	--hue-shift-amount: 0deg;
 }
 
 .test-shape {
@@ -11,7 +12,6 @@ body {
 	background: var(--animated-item-color);
 	animation: glow-animation 3s ease-in-out alternate infinite;
 	display: inline-block;
-	--hue-shift-amount: 0deg;
 }
 
 @keyframes glow-animation {
