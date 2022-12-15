@@ -1,13 +1,12 @@
 body {
 	margin: 0;
 	width: 100%;
-	background: #de98eb;
+	background: #141414;
 }
 
 #BG1 {
-	min-height: 100vh;
-	margin-left: 1in;
-	margin-right: 1in;
-	width: calc(100% - 2in);
-	background: #141414;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: red;
 }
