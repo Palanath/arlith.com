@@ -8,9 +8,9 @@ body {
 .test-shape {
 	background: var(--animated-item-color);
 	fill: var(--animated-item-color);
-/* 	animation: glow-animation 3s ease-in-out alternate infinite; */
-	filter: drop-shadow(0 0 2px var(--secondary-color, var(--animated-item-color))) hue-rotate(var(--hue-shift-amount));
+	animation: enter-animation 1.5s ease-out, glow-animation 1s 1.5s ease-in-out alternate infinite;
 	display: inline-block;
+	filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
 }
 
 div.test-shape {
@@ -19,11 +19,13 @@ div.test-shape {
 	border-radius: 100%;
 }
 
-@keyframes glow-animation {
+@keyframes enter-animation {
 	0% {
-		filter: saturate(.7) brightness(1.1) drop-shadow(0 0 0 var(--secondary-color, var(--animated-item-color))) hue-rotate(var(--hue-shift-amount));
+		opacity: 0;
+		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color))) blur(4px);
 	}
 	100% {
-		filter: saturate(1) brightness(1) drop-shadow(0 0 15px var(--secondary-color, var(--animated-item-color))) hue-rotate(var(--hue-shift-amount));
+		opacity: 1;
+		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
 	}
 }
