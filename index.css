@@ -6,19 +6,24 @@ body {
 }
 
 .test-shape {
+	background: var(--animated-item-color);
+	fill: var(--animated-item-color);
+/* 	animation: glow-animation 3s ease-in-out alternate infinite; */
+	filter: drop-shadow(0 0 2px var(--secondary-color, var(--animated-item-color))) hue-rotate(var(--hue-shift-amount));
+	display: inline-block;
+}
+
+div.test-shape {
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
-	background: var(--animated-item-color);
-	animation: glow-animation 3s ease-in-out alternate infinite;
-	display: inline-block;
 }
 
 @keyframes glow-animation {
 	0% {
-		filter: saturate(.7) brightness(1.1) drop-shadow(0 0 0 var(--animated-item-color)) hue-rotate(var(--hue-shift-amount));
+		filter: saturate(.7) brightness(1.1) drop-shadow(0 0 0 var(--secondary-color, var(--animated-item-color))) hue-rotate(var(--hue-shift-amount));
 	}
 	100% {
-		filter: saturate(1) brightness(1) drop-shadow(0 0 15px var(--animated-item-color)) hue-rotate(var(--hue-shift-amount));
+		filter: saturate(1) brightness(1) drop-shadow(0 0 15px var(--secondary-color, var(--animated-item-color))) hue-rotate(var(--hue-shift-amount));
 	}
 }
