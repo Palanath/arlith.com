@@ -5,14 +5,13 @@ body {
 	--hue-shift-amount: 0deg;
 }
 
-.animated-background-element {
+.background-element {
 	background: var(--animated-item-color);
 	fill: var(--animated-item-color);
-	animation: enter-animation 1.5s ease-out, glow-animation 1s 1.5s ease-in-out alternate infinite;
+	animation: enter-animation 1.5s ease-out;
 	display: inline-block;
 	filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
 }
-
 svg {
 	overflow: visible;
 }
