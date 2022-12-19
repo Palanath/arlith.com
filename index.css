@@ -5,18 +5,12 @@ body {
 	--hue-shift-amount: 0deg;
 }
 
-.test-shape {
+.animated-background-element {
 	background: var(--animated-item-color);
 	fill: var(--animated-item-color);
 	animation: enter-animation 1.5s ease-out, glow-animation 1s 1.5s ease-in-out alternate infinite;
 	display: inline-block;
 	filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
-}
-
-div.test-shape {
-	width: 200px;
-	height: 200px;
-	border-radius: 100%;
 }
 
 svg {
