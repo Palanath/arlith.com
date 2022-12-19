@@ -1,8 +1,12 @@
+:root {
+	font: 3em Arial, sans-serif;
+}
 body {
 	margin: 0;
 	width: 100%;
 	background: #141414;
 	--hue-shift-amount: 0deg;
+	color: lightgray;
 }
 
 .background-element {
@@ -26,4 +30,22 @@ svg {
 		opacity: 1;
 		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
 	}
+}
+
+#Section2 {
+	padding: 2em 3em;
+	backdrop-filter: blur(5px);
+	background: #0008;
+	min-height: 30em;
+	max-width: 100vw;
+}
+
+#ScreenshotBar {
+	height: 300px;
+	overflow: auto hidden;
+	white-space: nowrap;
+}
+#ScreenshotBar>img {
+	margin: 0 10px;
+	height: 100%;	
 }
