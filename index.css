@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	width: 100%;
 	background: #141414;
-	--hue-shift-amount: 0deg;
+	--hue-shift-amount: calc(var(--scroll-amount, 0) * 1deg);
 	color: lightgray;
 }
 

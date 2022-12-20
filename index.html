@@ -3,7 +3,7 @@
 <head>
 <script type="text/javascript">
 document.addEventListener('scroll', function(e) {
-	document.body.style.setProperty('--hue-shift-amount', window.scrollY/6+"deg");
+	document.body.style.setProperty('--scroll-amount', window.scrollY);
 });
 </script>
 <meta charset="UTF-8">
@@ -19,12 +19,12 @@ document.addEventListener('scroll', function(e) {
 		</defs>
 	</svg>
 	<svg
-		style="position: fixed; bottom: 0; right: 4cm; width: 139.417px; height: 278.2px; transform: scaleX(-1) rotateZ(45deg) scale(5.2);">
-		<use class="background-element" id="orange-feather-1" href="#feather"
+		style="position: fixed; bottom: calc(var(--scroll-amount, 0) * .3px); right: 4cm; width: 139.417px; height: 278.2px; transform: scaleX(-1) rotateZ(45deg) scale(5.2);">
+		<use class="background-element"  id="orange-feather-1" href="#feather"
 			style="--animated-item-color: #FF4001;" />
 	</svg>
-	<svg
-		style="position: fixed; top: 0; left: -2cm; width: 139.417px; height: 278.2px; transform: rotateZ(45deg) scale(3.2);">
+	<svg 
+		style="position: fixed; top: calc(var(--scroll-amount, 0) * -.2px); left: -2cm; width: 139.417px; height: 278.2px; transform: rotateZ(45deg) scale(3.2);">
 		<use class="background-element" id="blue-feather-1" href="#feather"
 			style="--animated-item-color: #0301AD;" />
 	</svg>
