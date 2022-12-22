@@ -35,10 +35,14 @@ div {
 	font-size: 2rem;
 }
 
-#Download {
+.section {
 	padding: 3em 9em;
-	min-height: 80vh;
 	margin: 6em 0;
+}
+.section>div:first-child {
+	font-size: 3em;
+	color: white;
+	text-align: center;
 }
 
 #Download>div:nth-child(even)>img {
@@ -72,14 +76,12 @@ div {
 	text-align: left;
 	overflow: hidden;
 }
+#Download>div:first-child {
+	font-size: 3em;
+	text-align: center;
+}
 #Download>div>div /*Download buttons*/ {
 	margin-top: 2.5em;
-}
-
-#Section2 {
-	padding: 6em 9em;
-	min-height: 90em;
-	max-width: 100vw;
 }
 
 #ScreenshotBar {
@@ -126,8 +128,8 @@ div {
 		<a class="button" href="#Download">Download</a>
 		<a class="button" href="#Recent">Recent Updates</a>
 	</div>
-	<div id="Download" class="shadow">
-		<div style="font-size: 3em; color: white; text-align: center;">Download</div>
+	<div id="Download" class="shadow section">
+		<div>Download</div>
 		<div><h2>Latest</h2><img src="screenshot-1.png"/>Lorem
 			ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -152,15 +154,18 @@ div {
 		</div>
 	</div>
 
-	<div id="Section2" class="shadow">
-		<div style="margin-top: 4em; padding-left: 10px;">Screenshots</div>
-		<div id="ScreenshotBar">
-			<img src="screenshot-1.png"><img src="screenshot-2.png"><img
-				src="screenshot-3.png"><img src="screenshot-1.png"><img
-				src="screenshot-2.png"><img src="screenshot-3.png"><img
-				src="screenshot-1.png"><img src="screenshot-2.png"><img
-				src="screenshot-3.png">
-		</div>
+	<div id="Information" class="shadow section">
+	<div>Information</div>
+	<div></div>
+	<div>Arlith is made out of necessity; most communication platforms today are driven</div>
+<!-- 		<div style="margin-top: 4em; padding-left: 10px;">Screenshots</div> -->
+<!-- 		<div id="ScreenshotBar"> -->
+<!-- 			<img src="screenshot-1.png"><img src="screenshot-2.png"><img -->
+<!-- 				src="screenshot-3.png"><img src="screenshot-1.png"><img -->
+<!-- 				src="screenshot-2.png"><img src="screenshot-3.png"><img -->
+<!-- 				src="screenshot-1.png"><img src="screenshot-2.png"><img -->
+<!-- 				src="screenshot-3.png"> -->
+<!-- 		</div> -->
 	</div>
 </body>
 </html>
