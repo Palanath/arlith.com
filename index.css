@@ -4,8 +4,8 @@
 }
 .shadow {
 	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
-	backdrop-filter: blur(15px); /* 5px */
-/* 	background: #0008; */
+	backdrop-filter: blur(5px); /* 5px */
+	background: #0008;
 }
 
 body {
