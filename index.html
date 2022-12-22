@@ -16,7 +16,7 @@ div {
 	font-size: 1.5em;
 	padding: 10em 0 3em;
 }
-.button-bar>a {
+.button-bar>a, .button {
 	text-decoration: none;
 	font-style: normal;
 	display: inline-block;
@@ -28,16 +28,18 @@ div {
 	color: lightgray;
 	backdrop-filter: blur(15px);
 }
-.button-bar>a:hover {
+.button-bar>a:hover, .button:hover {
 	background-color: lightgray;
 	color: black;
+}
+.button {
+	font-size: 1.5em;
 }
 
 #Download {
 	padding: 3em 9em;
 	min-height: 80vh;
 	margin: 6em 0;
-	overflow: hidden;
 }
 
 #Download>div:nth-child(even)>img {
@@ -69,6 +71,7 @@ div {
 #Download>div {
 	font-size: 1.2em;
 	text-align: left;
+	overflow: hidden;
 }
 
 #Section2 {
@@ -123,7 +126,7 @@ div {
 	</div>
 	<div id="Download" class="shadow">
 		<div style="font-size: 3em; color: white; text-align: center;">Download</div>
-		<div href="latest/Arlith.jar"><h2>Latest</h2><img src="screenshot-1.png"/>Lorem
+		<div><h2>Latest</h2><img src="screenshot-1.png"/>Lorem
 			ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -131,8 +134,9 @@ div {
 			voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 			officia deserunt mollit anim id est laborum.
+			<div><a class="button" href="latest/Arlith.jar">Download</a></div>
 		</div>
-		<div href="development/Arlith.jar">
+		<div>
 			<h2>Development</h2>
 			<img src="screenshot-2.png" />Lorem ipsum dolor sit amet, consectetur
 			adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -142,6 +146,7 @@ div {
 			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est
 			laborum.
+			<div><a class="button" href="development/Arlith.jar">Download</a></div>
 		</div>
 	</div>
 
