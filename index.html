@@ -12,40 +12,8 @@ div {
 	text-align: center;
 }
 
-div.card-block {
-	display: inline-block;
-	border: solid 3px #FF400170;
-	min-width: min(15vw, 30vh);
-	min-height: min(15vw, 30vh);
-	margin: .3em;
-	border-radius: 5%;
-	transition: border-color .3s, background-color .3s;
-	font-size: .5em;
-}
-div.card-block:hover {
-	border: solid 3px #FF4001;
-	background-color: #FF400140;
-	cursor: pointer;
-}
-
-#Section2 {
-	padding: 2em 3em;
-	min-height: 30em;
-	max-width: 100vw;
-}
-
-#ScreenshotBar {
-	height: 300px;
-	overflow: auto hidden;
-	white-space: nowrap;
-}
-#ScreenshotBar>img {
-	margin: 0 10px;
-	height: 100%;	
-}
-
 .button-bar {
-	font-size: .5em;
+	font-size: 1.5em;
 	padding: 10em 0 3em;
 }
 .button-bar>a {
@@ -63,6 +31,49 @@ div.card-block:hover {
 .button-bar>a:hover {
 	background-color: lightgray;
 	color: black;
+}
+
+#Download {
+	padding: 3em 9em;
+	min-height: 80vh;
+	margin: 6em 0;
+}
+
+#Download>div:nth-child(even)>img {
+	float: left;
+}
+#Download>div:nth-child(odd)>img {
+	float: right;
+}
+#Download>div>h2 {
+	border: 3px solid currentcolor;
+	border-width: 0 0 3px;
+	clear: both;
+}
+#Download>div:nth-child(even)>h2 {
+	text-align: left;
+}
+#Download>div:nth-child(odd)>h2 {
+	text-align: right;
+}
+#Download>div>img {
+	height: calc(100vh/3);
+}
+
+#Section2 {
+	padding: 6em 9em;
+	min-height: 90em;
+	max-width: 100vw;
+}
+
+#ScreenshotBar {
+	height: 300px;
+	overflow: auto hidden;
+	white-space: nowrap;
+}
+#ScreenshotBar>img {
+	margin: 0 10px;
+	height: 100%;	
 }
 
 </style>
@@ -89,9 +100,9 @@ div.card-block:hover {
 			style="--animated-item-color: #0301AD;" />
 	</svg>
 	
-	<div style=" margin-top: 1em; font-size: 2.33em; color: white;">ARLITH</div>
+	<div style=" margin-top: 1em; font-size: 7em; color: white;">ARLITH</div>
 	<div
-		style="margin-top: 2.5em; font-size: .6em; color: lightgray; font-style: italic; max-width: min(80vw, 80vh); margin: 1em auto auto auto;">Arlith
+		style="margin-top: 2.5em; font-size: 2em; color: lightgray; font-style: italic; max-width: min(80vw, 80vh); margin: 1em auto auto auto;">Arlith
 		is an free communication platform. Its purpose is to streamline online
 		communication.</div>
 	<div class="button-bar">
@@ -99,11 +110,10 @@ div.card-block:hover {
 		<a href="#Download">Download</a>
 		<a href="#Recent">Recent Updates</a>
 	</div>
-	<div id="Download" class="shadow"
-		style="min-height: min(20vw, 40vh); margin: 2em 0; padding: .5em 0;">
-		<div>Download</div>
-		<div href="latest/Arlith.jar" class="card-block">Latest</div>
-		<div href="development/Arlith.jar" class="card-block">Development</div>
+	<div id="Download" class="shadow">
+		<div style="font-size: 3em; color: white;">Download</div>
+		<div href="latest/Arlith.jar"><h2>Latest</h2><img src="screenshot-1.png"/>Lorem ipsum dolor sit amet etc. etc.</div>
+		<div href="development/Arlith.jar"><h2>Development</h2><img src="screenshot-2.png"/>Lorem ipsum dolor sit amet etc. etc.</div>
 	</div>
 
 	<div id="Section2" class="shadow">
