@@ -14,11 +14,18 @@ div {
 
 div.card-block {
 	display: inline-block;
-	border: solid 3px #FF4001;
-	min-width: min(20vw, 40vh);
-	min-height: min(20vw, 40vh);
+	border: solid 3px #FF400170;
+	min-width: min(15vw, 30vh);
+	min-height: min(15vw, 30vh);
 	margin: .3em;
 	border-radius: 5%;
+	transition: border-color .3s, background-color .3s;
+	font-size: .5em;
+}
+div.card-block:hover {
+	border: solid 3px #FF4001;
+	background-color: #FF400140;
+	cursor: pointer;
 }
 
 #Section2 {
@@ -36,6 +43,21 @@ div.card-block {
 	margin: 0 10px;
 	height: 100%;	
 }
+
+.button-bar {
+	font-size: .5em;
+	padding: 10em 0 3em;
+}
+.button-bar>a {
+	text-decoration: none;
+	font-style: normal;
+	display: inline-block;
+	border-radius: calc(1em + 20px);
+	background: lightgray;
+	padding: 10px 20px;
+	margin: 5px;
+}
+
 </style>
 <meta charset="UTF-8">
 <title>Arlith</title>
@@ -62,11 +84,20 @@ div.card-block {
 	
 	<div style=" margin-top: 1em; font-size: 2.33em; color: white;">ARLITH</div>
 	<div
-		style="margin-top: 2.5em; font-size: .5em; color: lightgray; font-style: italic; max-width: min(80vw, 80vh); margin: auto;">Arlith
-		is an online communication platform. It's free to download and use. For more info, see below.</div>
-		<div class="shadow" style="min-height: min(20vw, 40vh); margin: 2em 0; padding: .5em 0;"><div>Download</div>
-		<div class="card-block"></div><div class="card-block"></div>
-		</div>
+		style="margin-top: 2.5em; font-size: .6em; color: lightgray; font-style: italic; max-width: min(80vw, 80vh); margin: 1em auto auto auto;">Arlith
+		is an free communication platform. Its purpose is to streamline online
+		communication.</div>
+	<div class="button-bar">
+		<a href="#Information">What is this?</a>
+		<a href="#Download">Download</a>
+		<a href="#Recent">Recent Updates</a>
+	</div>
+	<div class="shadow"
+		style="min-height: min(20vw, 40vh); margin: 2em 0; padding: .5em 0;">
+		<div>Download</div>
+		<div href="latest/Arlith.jar" class="card-block">Latest</div>
+		<div href="development/Arlith.jar" class="card-block">Development</div>
+	</div>
 
 	<div id="Section2" class="shadow">
 		<div style="margin-top: 4em; padding-left: 10px;">Screenshots</div>
