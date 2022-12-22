@@ -1,5 +1,6 @@
 :root {
 	font: 3em Arial, sans-serif;
+	scroll-behavior: smooth;
 }
 .shadow {
 	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
