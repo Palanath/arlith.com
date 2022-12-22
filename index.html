@@ -53,9 +53,16 @@ div.card-block:hover {
 	font-style: normal;
 	display: inline-block;
 	border-radius: calc(1em + 20px);
-	background: lightgray;
 	padding: 10px 20px;
 	margin: 5px;
+	transition: background-color .3s, color .3s;
+	border: 3px solid lightgray;
+	color: lightgray;
+	backdrop-filter: blur(15px);
+}
+.button-bar>a:hover {
+	background-color: lightgray;
+	color: black;
 }
 
 </style>
