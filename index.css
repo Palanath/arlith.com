@@ -1,6 +1,8 @@
 :root {
 	font-family: Arial, sans-serif;
 	scroll-behavior: smooth;
+	--theme-blue: #0301AD;
+	--theme-orange: #FF4001;
 }
 .shadow {
 	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
@@ -37,4 +39,9 @@ svg {
 		opacity: 1;
 		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
 	}
+}
+
+::selection {
+	background: gold;
+	color: var(--theme-orange);
 }
