@@ -39,10 +39,20 @@ div {
 	padding: 3em 9em;
 	margin: 6em 0;
 }
-.section>div:first-child {
+.section>h1 {
 	font-size: 3em;
 	color: white;
 	text-align: center;
+	margin-bottom: .5em;
+}
+
+.flexed {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flexed>div {
+	width: calc(50% - 60px - 4em);
+	margin: 25px;
 }
 
 #Download>div:nth-child(even)>img {
@@ -76,22 +86,24 @@ div {
 	text-align: left;
 	overflow: hidden;
 }
-#Download>div:first-child {
-	font-size: 3em;
-	text-align: center;
+#Download>h1 {
+	margin: 0;
 }
 #Download>div>div /*Download buttons*/ {
 	margin-top: 2.5em;
 }
 
-#ScreenshotBar {
-	height: 300px;
-	overflow: auto hidden;
-	white-space: nowrap;
+#Information h2 {
+	font-size: 1.6em;
 }
-#ScreenshotBar>img {
-	margin: 0 10px;
-	height: 100%;	
+#Information>div>div {
+	border: 5px solid #0301AD;
+	border-radius: 30px;
+	font-size: 1.4em;
+	padding: 0 2em 1em 2em;
+}
+#Information>div>div:nth-child(4n+1), #Information>div>div:nth-child(4n) {
+	border-color: #FF4001;
 }
 
 </style>
@@ -121,7 +133,7 @@ div {
 	<div style=" margin-top: 1em; font-size: 7em; color: white;">ARLITH</div>
 	<div
 		style="margin-top: 2.5em; font-size: 2em; color: lightgray; font-style: italic; max-width: min(80vw, 80vh); margin: 1em auto auto auto;">Arlith
-		is an free communication platform. Its purpose is to streamline online
+		is a free communication platform. Its purpose is to streamline online
 		communication.</div>
 	<div class="button-bar">
 		<a class="button" href="#Information">What is this?</a>
@@ -129,7 +141,7 @@ div {
 		<a class="button" href="#Recent">Recent Updates</a>
 	</div>
 	<div id="Download" class="shadow section">
-		<div>Download</div>
+		<h1>Download</h1>
 		<div><h2>Latest</h2><img src="screenshot-1.png"/>Lorem
 			ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -155,17 +167,26 @@ div {
 	</div>
 
 	<div id="Information" class="shadow section">
-	<div>Information</div>
-	<div></div>
-	<div>Arlith is made out of necessity; most communication platforms today are driven</div>
-<!-- 		<div style="margin-top: 4em; padding-left: 10px;">Screenshots</div> -->
-<!-- 		<div id="ScreenshotBar"> -->
-<!-- 			<img src="screenshot-1.png"><img src="screenshot-2.png"><img -->
-<!-- 				src="screenshot-3.png"><img src="screenshot-1.png"><img -->
-<!-- 				src="screenshot-2.png"><img src="screenshot-3.png"><img -->
-<!-- 				src="screenshot-1.png"><img src="screenshot-2.png"><img -->
-<!-- 				src="screenshot-3.png"> -->
-<!-- 		</div> -->
+		<h1>Information</h1>
+		<div class="flexed">
+			<div>
+				<h2>How it Works</h2>
+				<p>
+					Two users download the client and create an account, then friend
+					each other in Arlith. They can then create <span
+						style="color: white;">private communication channels</span> with
+					each other that they can use to communicate through.
+				</p>
+				<p>Arlith also supports</p>
+			</div>
+			<div>
+				<h2>Basic Features</h2>
+				<p>Group messaging, Communities, Bots, some other stuff.</p>
+			</div>
+			<div>
+				<h2>Purpose</h2>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
