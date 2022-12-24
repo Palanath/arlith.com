@@ -110,6 +110,14 @@ div {
 	border-color: #FF4001;
 }
 
+#RecentUpdates {
+	text-align: left;
+}
+#RecentUpdates>h4 {
+	font-style: italic;
+	color: dimgray;
+}
+
 </style>
 <meta charset="UTF-8">
 <title>Arlith</title>
@@ -222,7 +230,21 @@ div {
 
 	<div id="RecentUpdates" class="shadow section">
 		<h1>Recent Updates</h1>
-		
+		<h4>Logging API - 12/23/2022</h4>
+		<p>The program now implements a cleaner logging API. Logging is
+			used for debugging, primarily; informational messages are printed
+			somewhere whenever something important happens and when an unexpected
+			error occurs. Developers can use log messages when they run the app
+			or when a tester shares log messages with the developer, and can try
+			and pinpoint what went wrong or how the program is behaving.</p>
+		<p>The new log system adds prefixes to log messages including the
+			timestamp of when the message was logged as well as some additional
+			information about what part of the code the log message is occurring
+			on. The new logging system includes cleaner abstractions and a more
+			modular way of customizing logging behavior, so the application can
+			be more easily set up to log messages to different outputs, e.g.
+			error messages to a file, or to disable debug messages when not
+			needed.</p>
 	</div>
 
 	<div class="section shadow" style="margin-bottom: 0;">
