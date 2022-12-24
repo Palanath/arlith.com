@@ -4,6 +4,10 @@
 	--theme-blue: #0301AD;
 	--theme-orange: #FF4001;
 }
+.feather {
+	position: fixed;
+/* 	transition: top .4s ease-in-out, bottom .4s ease-in-out; */
+}
 .shadow {
 	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
 	backdrop-filter: blur(5px); /* 5px */
