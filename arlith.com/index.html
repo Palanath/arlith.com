@@ -118,6 +118,16 @@ div {
 	color: dimgray;
 }
 
+@media (max-aspect-ratio: 1/1) {
+	#Download>div>img {
+		float: none !important;
+		display: block;
+		height: unset;
+		width: 100%;
+		margin: 0 0 1em 0 !important;
+	}
+}
+
 </style>
 <meta charset="UTF-8">
 <title>Arlith</title>
@@ -132,7 +142,7 @@ div {
 		</defs>
 	</svg>
 	<svg class="feather"
-		style="top: calc(var(--scroll-amount, 0) * -.1px); left: -2cm; width: 139.417px; height: 278.2px; transform: rotateZ(45deg) scale(3.2);">
+		style="top: calc(var(--scroll-amount, 0) * -.1px); left: -2cm; width: 139.417px; height: 278.2px; scale: 3.2; transform: rotateZ(45deg);">
 		<use class="background-element" id="blue-feather-1" href="#feather"
 			style="--animated-item-color: #0301AD;" />
 	</svg>
