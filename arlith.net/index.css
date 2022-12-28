@@ -6,8 +6,15 @@
 	--theme-blue: #0301AD;
 	--theme-orange: #FF4001;
 }
+
+body {
+	background: #090909;
+	color: lightgray;
+	padding: 20px;
+}
+
 h1,h2,h3,h4,h5,h6 {
-	color: #6361EC;
+	color: #FF4001;
 }
 h1,h2{
 	font-family: Times New Roman, serif;
