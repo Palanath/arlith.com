@@ -6,4 +6,4 @@
 	source code is contained inside an <code>index</code> resource in that
 	sub-directory.
 </p>
-<?php t();?>
+<?php t();
