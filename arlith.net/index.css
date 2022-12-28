@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+:root {
+	font-family: Arial, sans-serif;
+	scroll-behavior: smooth;
+	--theme-blue: #0301AD;
+	--theme-orange: #FF4001;
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #6361EC;
+}
+h1,h2{
+	font-family: Times New Roman, serif;
+}
+body {
+	background: #090909;
+	color: #d5856b;
+}
