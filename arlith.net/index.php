@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="index.css">
-<meta charset="UTF-8">
-<title></title>
-</head>
-<body>
+<?php h("Arlith Wiki - Homepage");?>
 	<h1>Arlith Wiki</h1>
 	<p>
 		The <b>Arlith Wiki</b> is an online, informational encyclopedia of
@@ -34,5 +27,4 @@
 		guide on wiki editing can be found on the <a href="/editing">editing
 			page</a>.
 	</p>
-</body>
-</html>
+<?php t();
