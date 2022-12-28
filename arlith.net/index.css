@@ -20,8 +20,13 @@ h1,h2{
 	font-family: Times New Roman, serif;
 	border-bottom: solid 1px currentcolor;
 }
-body {
-	background: #090909;
-	color: #d5856b;
-	padding: 20px;
+
+a:link {
+	color: white;
+}
+a:visited {
+	color: #B75F01;
+}
+a:active {
+	color: var(--theme-orange);
 }
