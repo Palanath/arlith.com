@@ -30,3 +30,7 @@ a:visited {
 a:active {
 	color: var(--theme-orange);
 }
+::selection {
+	background: gold;
+	color: var(--theme-orange);
+}
