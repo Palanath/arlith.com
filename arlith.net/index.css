@@ -39,9 +39,26 @@ a:active {
 code {/* Inline */
 	background-color: #ffffff2a;
 	border-radius: 4px;
-	border: 1px solid dimgray;
+	border: 1px solid #444;
 	white-space: nowrap;
 	padding: 2px;
 	display: inline-block;
 	tab-size: 4;
+}
+pre {
+	display: block;
+	min-width: 600px;/* Default min-width of pre blocks. */
+	background-color: #ffffff2a;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid #444;
+	overflow-x: auto;
+	tab-size: 4;
+}
+pre>code {/* Codeblock */
+	background-color: unset;
+	border-radius: unset;
+	border: unset;
+	padding: unset;
+	white-space: unset;
 }
