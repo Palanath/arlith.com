@@ -34,3 +34,14 @@ a:active {
 	background: gold;
 	color: var(--theme-orange);
 }
+
+/* Code */
+code {/* Inline */
+	background-color: #ffffff2a;
+	border-radius: 4px;
+	border: 1px solid dimgray;
+	white-space: nowrap;
+	padding: 2px;
+	display: inline-block;
+	tab-size: 4;
+}
