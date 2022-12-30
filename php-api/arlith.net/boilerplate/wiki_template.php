@@ -14,6 +14,20 @@ function h(string $page_title)
 <link rel="stylesheet" type="text/css" href="/index.css">
 <meta charset="UTF-8">
 <title><?php echo$page_title;?></title>
+<script type="text/javascript">
+window.onload = function() {
+    for (let img of document.querySelectorAll("figure>img")) {
+    	let fig = img.parentNode;
+        img.onclick = function() {
+        console.log(fig.classList);
+        	if(fig.classList.contains("expanded"))
+        		fig.classList.remove("expanded");
+        	else
+        		fig.classList.add("expanded");
+        }
+	}
+}
+</script>
 </head>
 <body>
 <?php
