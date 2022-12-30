@@ -180,3 +180,21 @@ figcaption {
 em {
 	color: white;
 }
+
+div.blurb {
+	margin-left: 20px;
+	font-style: italic;
+	background: linear-gradient(to right, hsl(var(--blurb-hue) 100% 50%) 4px, hsla(var(--blurb-hue) 100% 50% / 0.14) 4px);
+	padding: 5px 8px;
+	border-radius: 5px;
+	margin-right: 50px;
+}
+div.blurb.info {
+	--blurb-hue: 196deg;
+}
+div.blurb.warn {
+	--blurb-hue: 51deg;
+}
+div.blurb.urgent {
+	--blurb-hue: 0deg;
+}
