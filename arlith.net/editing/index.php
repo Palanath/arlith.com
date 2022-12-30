@@ -113,4 +113,38 @@ private int j = 10;&lt;/code&gt;&lt;/pre&gt;</code></pre></td>
 private int j = 10;</code></pre></td>
 	</tr>
 </table>
+<h3>Sections</h3>
+<p>
+	<code>&lt;section&gt;</code> elements are rendered indented, with a
+	colored bar to their left. They are commonly used for blurbs or
+	examples.
+</p>
+<table class="lw">
+	<tr>
+		<th>HTML</th>
+		<th>Rendered Content</th>
+	</tr>
+	<tr>
+		<td><pre><code>&lt;section class="example"&gt;
+	&lt;h3&gt;Example&lt;/h3&gt;
+	&lt;p&gt;This is an example.&lt;/p&gt;
+&lt;/section&gt;</code></pre></td>
+		<td><section class="example" style="margin-left: 0;">
+				<h3>Example</h3>
+				<p>This is an example.</p>
+			</section></td>
+	</tr>
+</table>
+<p>Here is an example of the same code outside of a table:</p>
+<section class="example">
+	<h3>Example</h3>
+	<p>This is an example.</p>
+</section>
+<p>
+	The <code>class="example"</code> CSS class causes the color of the
+	colored bar to be a red color. (This is specified in the wiki
+	stylesheet.) Currently, the only section class with a predefined bar
+	color is <code>example</code> rendering with color <code
+		style="color: red;">red</code>.
+</p>
 <?php t();

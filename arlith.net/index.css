@@ -113,3 +113,10 @@ table td.rowheader {
 	font-weight: bold;
 	text-align: center;
 }
+
+/* Nested Sections */
+section {
+	margin-left: -20px; /* Undo the padding shift by root element */
+	padding-left: 40px; /* Shift content back into place and then FURTHER indent it. */
+	background-image: linear-gradient(to right, var(--tag-color, red) 5px, transparent 5px);
+}
