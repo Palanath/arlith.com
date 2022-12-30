@@ -6,7 +6,7 @@
 }
 .feather {
 	position: fixed;
-/* 	transition: top .4s ease-in-out, bottom .4s ease-in-out; */
+/* 	transition: top .4s ease-out, bottom .4s ease-out; */
 }
 .shadow {
 	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
