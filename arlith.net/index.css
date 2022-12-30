@@ -175,3 +175,10 @@ figcaption {
 	color: #555555;
 	font-style: italic;
 }
+
+/* Emphasis */
+em {
+	color: white;
+	font-style: normal;
+	font-weight: bold;
+}
