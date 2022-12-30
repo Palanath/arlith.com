@@ -8,13 +8,13 @@
 </p>
 <p>The bulk of Arlith's code is organized into:</p>
 <ul>
-	<li><i>the frontend</i>, consisting of code defining user interfaces,</li>
-	<li><i>the backend</i>, consisting of the Arlith client and server
+	<li><em>the frontend</em>, consisting of code defining user interfaces,</li>
+	<li><em>the backend</em>, consisting of the Arlith client and server
 		software components, and the APIs shared between them,</li>
-	<li><i>libraries</i>, which encompasses general code utilities
+	<li><em>libraries</em>, which encompasses general code utilities
 		(designed to make Arlith work, but general enough to be used for other
 		applications), and</li>
-	<li><i>launchers</i> which are a few classes dedicated to launching
+	<li><em>launchers</em> which are a few classes dedicated to launching
 		different frontends of the application in different environments.</li>
 </ul>
 <?php t();
