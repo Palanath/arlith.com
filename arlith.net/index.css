@@ -20,6 +20,10 @@ h1,h2,h3,h4,h5,h6 {
 h1,h2{
 	font-family: Times New Roman, serif;
 	border-bottom: solid 1px currentcolor;
+	font-weight: normal;
+}
+h4,h6 {
+	font-style: italic;
 }
 
 /* Links */
