@@ -118,13 +118,18 @@ div {
 	color: dimgray;
 }
 
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 4/3) {
 	#Download>div>img {
 		float: none !important;
 		display: block;
 		height: unset;
 		width: 100%;
 		margin: 0 0 1em 0 !important;
+	}
+}
+@media (max-aspect-ratio: 7/6) {
+	.flexed>div {
+		width: calc(100% - 60px - 4em);
 	}
 }
 
