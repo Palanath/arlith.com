@@ -13,6 +13,7 @@ body {
 	padding: 20px;
 }
 
+/* Headers */
 h1,h2,h3,h4,h5,h6 {
 	color: var(--theme-orange);
 }
@@ -21,6 +22,7 @@ h1,h2{
 	border-bottom: solid 1px currentcolor;
 }
 
+/* Links */
 a:link {
 	color: white;
 }
@@ -61,4 +63,53 @@ pre>code {/* Codeblock */
 	border: unset;
 	padding: unset;
 	white-space: unset;
+}
+
+/* Tables */
+th {
+	color: gold;
+}
+
+table, th, td {/* Normal */
+	border-collapse: collapse;
+	border: 1px solid #444;
+	padding: 5px;
+}
+table {
+	background-color: #ffffff0a;
+}
+
+
+table.lw {/* "Lightweight" tables (as used in the styling page) */
+	border: unset;
+	background-color: unset;
+	border-collapse: separate;
+	border-spacing: 5px 0;
+	max-width: 600px; /* Default max width. Can be unset w/ .unrestricted-width class (or inline, I suppose). */
+}
+table.lw.unrestricted-width {
+	max-width: unset;
+}
+table.lw th {
+	padding: 3px;
+	border: unset;
+}
+table.lw td {
+	background-color: #ffffff0a;
+	border: 1px solid #444;
+	vertical-align: top;
+}
+table td>pre {
+	min-width: unset;
+}
+table td>pre:only-child {/* Code block as an only child of a td does not render border or bg, and top and bottom margin are removed!*/
+	/* This style rule is here so that pre blocks can be used in tables. */
+	/* Using pre blocks in tables lets one render line-breaks, tabbing, whitespace, etc. as written. */
+	border: unset;
+	background-color: unset;
+	margin: 0;
+}
+table td.rowheader {
+	font-weight: bold;
+	text-align: center;
 }

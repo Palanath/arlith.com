@@ -31,7 +31,7 @@
 	Headers come in 6 different <i>levels</i>, which affect their size and
 	their semantic importance on a page.
 </p>
-<table>
+<table class="lw">
 	<tr>
 		<th>HTML</th>
 		<th>Rendered Content</th>
@@ -80,7 +80,7 @@
 	inline code block will not be split so that text can "wrap" to the next
 	line.
 </p>
-<table>
+<table class="lw">
 	<tr>
 		<th>HTML</th>
 		<th>Rendered Content</th>
@@ -100,7 +100,7 @@ most ubiquitous access-modifier in Java, in front of both
 <p>Block formatted code renders in a padded, rectangular element. Block
 	formatted code is rendered with the same spacing, tabulation, and other
 	whitespace as is contained within the block formatted source code.</p>
-<table>
+<table class="lw">
 	<tr>
 		<th>HTML</th>
 		<th>Rendered Content</th>
@@ -113,5 +113,4 @@ private int j = 10;&lt;/code&gt;&lt;/pre&gt;</code></pre></td>
 private int j = 10;</code></pre></td>
 	</tr>
 </table>
-
 <?php t();
