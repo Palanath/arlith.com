@@ -198,3 +198,35 @@ div.blurb.warn {
 div.blurb.urgent {
 	--blurb-hue: 0deg;
 }
+
+p>sup[info] {
+	color: gold;
+	cursor: pointer;
+	transition: color .8s;
+}
+p>sup[info]:empty::before {
+	content: '[' attr(info) ']';
+}
+p>sup[info]:hover {
+	text-decoration: underline;
+	color: orange;
+}
+p>sup[info]:active {
+	transition: unset;
+	color: red;
+}
+p>span::before {
+	content: '[' attr(info) ']';
+	color: gold;
+	vertical-align: super;
+	font-size: .86em;
+}
+p>span[info] {
+	display: none;
+	height: 0;
+	transition: height .6s;
+}
+p>span[info].visible{
+	display: block;
+	height: unset;
+}
