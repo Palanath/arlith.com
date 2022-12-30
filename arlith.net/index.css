@@ -120,3 +120,54 @@ section {
 	padding-left: 40px; /* Shift content back into place and then FURTHER indent it. */
 	background-image: linear-gradient(to right, var(--tag-color, red) 5px, transparent 5px);
 }
+
+/* Figures */
+figure {
+	text-align: center;
+	transition: width .4s ease-in-out;
+	width: var(--default-size);
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+figure.float-left {
+	float: left;
+	margin-right: 16px;
+}
+figure.float-right {
+	float: right;
+	margin-left: 16px;
+}
+
+figure.expanded {
+	width: var(--expanded-size, 100%);
+}
+figure .show-on-expand {
+	visibility: hidden;
+}
+figure.expanded .show-on-expand {
+	visibility: visible;
+}
+figure>h3:first-child, figure>h4:first-child, figure>h5:first-child, figure>h6:first-child {
+	font-family: sans-serif;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+figure>img {
+	max-width: calc(100% - 40px);
+	border-radius: 20px;
+	border: solid 1px black;
+	padding: 20px;
+	transition: border .07s;
+}
+figure>img:hover {
+	cursor: pointer;
+	border: var(--theme-orange) 1px solid;
+}
+
+figcaption {
+	margin-top: 10px;
+	color: #555555;
+	font-style: italic;
+}

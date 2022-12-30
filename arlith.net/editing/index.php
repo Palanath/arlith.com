@@ -147,4 +147,27 @@ private int j = 10;</code></pre></td>
 	color is <code>example</code> rendering with color <code
 		style="color: red;">red</code>.
 </p>
+<h3>Figures</h3>
+<p>Figures introduce a visual element onto the page with a caption and
+	title. They can float on the page such that normal page content wraps
+	around them and can be expanded and shrunk by the user via mouse
+	click/tap.</p>
+<table class="lw">
+	<tr>
+		<th>HTML</th>
+		<th>Rendered Content</th>
+	</tr>
+	<tr>
+		<td><pre><code>&lt;figure class="float-left" style="--default-size: 200px; --expanded-size: 600px;"&gt;
+    &lt;h3&gt;Arlith Logo&lt;/h3&gt;
+    &lt;img src="https://arlith.com/logo.svg" alt="SVG line art of a drawn, upwards-facing feather."&gt;
+    &lt;figcaption&gt;Arlith's logo, as an SVG icon. The icon depicts a feather.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></td>
+		<td><figure class="float-left" style="--default-size: 200px; --expanded-size: 600px;">
+    <h3>Arlith Logo</h3>
+    <img src="https://arlith.com/logo.svg" alt="SVG line art of a drawn, tilted feather.">
+    <figcaption>Arlith's logo, as an SVG icon. The icon depicts a feather.</figcaption>
+</figure></td>
+	</tr>
+</table>
 <?php t();
