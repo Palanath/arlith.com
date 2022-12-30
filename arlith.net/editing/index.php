@@ -64,4 +64,54 @@
 	<li>Conventional wiki semantics dictate that the top of every page have
 		a level 1 heading which defines the page's title.</li>
 </ul>
+<h3>Code</h3>
+<p>
+	Code elements (<code>&lt;code&gt;...&lt;/code&gt;</code>) are intended
+	to format code. Code elements render with a slightly lighter grey
+	background and a thin border. Code can be displayed in an <i>inline</i>
+	format (using a <code>&lt;code&gt;</code> element inline with text) or
+	in a <i>block</i> format.
+</p>
+<h4>Inline Code</h4>
+<p>
+	Inline code has a very slim padding; the border is very close to the
+	text and the border and background follow and surround the text. Inline
+	code is styled with line-wrappping <i>disabled</i> by default, so an
+	inline code block will not be split so that text can "wrap" to the next
+	line.
+</p>
+<table>
+	<tr>
+		<th>HTML</th>
+		<th>Rendered Content</th>
+	</tr>
+	<tr>
+		<td><pre><code>The &lt;code&gt;public&lt;/code&gt; keyword is the
+most ubiquitous access-modifier in Java, in front of both
+&lt;code&gt;protected&lt;/code&gt; and
+&lt;code&gt;private&lt;/code&gt;, prefixing almost every class,...</code></pre></td>
+		<td>The <code>public</code> keyword is the most ubiquitous
+			access-modifier in Java, in front of both <code>protected</code> and
+			<code>private</code>, prefixing almost every class,...
+		</td>
+	</tr>
+</table>
+<h4>Block Code</h4>
+<p>Block formatted code renders in a padded, rectangular element. Block
+	formatted code is rendered with the same spacing, tabulation, and other
+	whitespace as is contained within the block formatted source code.</p>
+<table>
+	<tr>
+		<th>HTML</th>
+		<th>Rendered Content</th>
+	</tr>
+	<tr>
+		<td><pre><code>&lt;pre&gt;&lt;code&gt;public int x = 5;
+private int j = 10;&lt;/code&gt;&lt;/pre&gt;</code></pre></td>
+		<td><pre
+			style="margin: unset; background-color: #ffffff0a; border: 1px solid #444;"><code>public int x = 5;
+private int j = 10;</code></pre></td>
+	</tr>
+</table>
+
 <?php t();
