@@ -181,7 +181,8 @@ em {
 	color: white;
 }
 
-div.blurb {
+/* Blurbs */
+div.blurb, p>span[info].blurb.visible {
 	margin-left: 20px;
 	font-style: italic;
 	background: linear-gradient(to right, hsl(var(--blurb-hue) 100% 50%) 4px, hsla(var(--blurb-hue) 100% 50% / 0.14) 4px);
@@ -189,16 +190,17 @@ div.blurb {
 	border-radius: 5px;
 	margin-right: 50px;
 }
-div.blurb.info {
+.info {
 	--blurb-hue: 196deg;
 }
-div.blurb.warn {
+.warn {
 	--blurb-hue: 51deg;
 }
-div.blurb.urgent {
+.urgent {
 	--blurb-hue: 0deg;
 }
 
+/* Info Popups */
 p>sup[info] {
 	color: gold;
 	cursor: pointer;
@@ -226,13 +228,25 @@ p>span[info] {
 	opacity: 0;
 	position: fixed;
 	visibility: hidden;
+	margin: 1em 0;
 }
 p>span[info].visible {
 	opacity: 1;
 	position: static;
 	visibility: visible;
+	--blurb-hue: 196deg;
+	font-size: .75em;
+	font-style: italic;
 	display: block;
+	color: dimgray;
+	margin: .2em 20px;
 }
 p>span[info].visible.inline {
 	display: inline;
+	font-size: 1em;
+	color: inherit;
+	font-style: normal;
+}
+p>span[info].blurb.visible {
+	color: inherit;
 }
