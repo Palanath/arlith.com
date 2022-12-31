@@ -1,0 +1,31 @@
+:root {
+	--header-text-color: black;
+	--body-text-color: #2C2C2C;/* Inverse of lightgray */
+	--dim-text: #7F7F7F;
+	--very-dim-text: #969696;
+
+	--background-color: #EBEBEB;
+	--shadow-color: #FFF8;
+	--button-hover-color: white;
+}
+
+.background-element {
+	filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)))
+	drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)))
+	drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
+}
+
+@keyframes enter-animation {
+	0% {
+		opacity: 0;
+		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)))
+			drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)))
+			drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color))) blur(4px);
+	}
+	100% {
+		opacity: 1;
+		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)))
+			drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)))
+			drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
+	}
+}

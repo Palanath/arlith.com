@@ -1,0 +1,62 @@
+:root {
+	font-family: Arial, sans-serif;
+	scroll-behavior: smooth;
+	--theme-blue: #0301AD;
+	--theme-orange: #FF4001;
+
+	/* Contrast Colors (used on page for text, background, etc.; all shades of gray). */
+	/* These are here so that they can be easily replaced with a light-mode stylesheet.*/
+	--header-text-color: white;
+	--body-text-color: lightgray;
+	--dim-text: gray;
+	--very-dim-text: dimgray;
+
+	--background-color: #141414;
+	--shadow-color: #0008;
+	--button-hover-color: black;/* Inverse of --header-text-color. */
+}
+.feather {
+	position: fixed;
+/* 	transition: top .4s ease-out, bottom .4s ease-out; */
+}
+.shadow {
+	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
+	backdrop-filter: blur(5px); /* 5px */
+	background: var(--shadow-color);
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	background: var(--background-color);
+	--hue-shift-amount: calc(var(--scroll-amount, 0) * 1deg);
+	color: var(--body-text-color);
+}
+
+.background-element {
+	background: var(--animated-item-color);
+	fill: var(--animated-item-color);
+	animation: enter-animation 1.5s ease-out;
+	display: inline-block;
+	filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
+}
+svg {
+	overflow: visible;
+	z-index: -1;
+}
+
+@keyframes enter-animation {
+	0% {
+		opacity: 0;
+		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color))) blur(4px);
+	}
+	100% {
+		opacity: 1;
+		filter: drop-shadow(0 0 20px var(--secondary-color, var(--animated-item-color)));
+	}
+}
+
+::selection {
+	background: gold;
+	color: var(--theme-orange);
+}
