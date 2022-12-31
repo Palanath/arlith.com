@@ -3,6 +3,17 @@
 	scroll-behavior: smooth;
 	--theme-blue: #0301AD;
 	--theme-orange: #FF4001;
+
+	/* Contrast Colors (used on page for text, background, etc.; all shades of gray). */
+	/* These are here so that they can be easily replaced with a light-mode stylesheet.*/
+	--header-text-color: white;
+	--body-text-color: lightgray;
+	--dim-text: gray;
+	--very-dim-text: dimgray;
+
+	--background-color: #141414;
+	--shadow-color: #0008;
+	--button-hover-color: black;/* Inverse of --header-text-color. */
 }
 .feather {
 	position: fixed;
@@ -11,15 +22,15 @@
 .shadow {
 	/* TODO Decide over slight blur + dark background or heavy blur + transparent background. */
 	backdrop-filter: blur(5px); /* 5px */
-	background: #0008;
+	background: var(--shadow-color);
 }
 
 body {
 	margin: 0;
 	width: 100%;
-	background: #141414;
+	background: var(--background-color);
 	--hue-shift-amount: calc(var(--scroll-amount, 0) * 1deg);
-	color: lightgray;
+	color: var(--body-text-color);
 }
 
 .background-element {

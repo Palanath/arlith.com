@@ -23,13 +23,13 @@ div {
 	padding: 10px 20px;
 	margin: 5px;
 	transition: background-color .3s, color .3s;
-	border: 3px solid lightgray;
-	color: lightgray;
+	border: 3px solid var(--body-text-color);
+	color: var(--body-text-color);
 	backdrop-filter: blur(15px);
 }
 .button:hover {
-	background-color: lightgray;
-	color: black;
+	background-color: var(--body-text-color);
+	color: var(--button-hover-color);
 }
 .button {
 	font-size: 2rem;
@@ -41,7 +41,7 @@ div {
 }
 .section>h1 {
 	font-size: 3em;
-	color: white;
+	color: var(--header-text-color);
 	text-align: center;
 	margin-bottom: .5em;
 	margin-top: 0;
@@ -115,7 +115,12 @@ div {
 }
 #RecentUpdates>h4 {
 	font-style: italic;
-	color: dimgray;
+	color: var(--very-dim-text);
+}
+
+#Footer {
+	text-align: left;
+	color: var(--dim-text);
 }
 
 @media (max-aspect-ratio: 4/3) {
@@ -162,9 +167,9 @@ div {
 			style="--animated-item-color: gray;" />
 	</svg>
 	
-	<div style=" margin-top: 1em; font-size: 7em; color: white;">ARLITH</div>
+	<div style=" margin-top: 1em; font-size: 7em; color: var(--header-text-color);">ARLITH</div>
 	<div
-		style="margin-top: 2.5em; font-size: 2em; color: lightgray; font-style: italic; max-width: min(80vw, 80vh); margin: 1em auto auto auto;">Arlith
+		style="margin-top: 2.5em; font-size: 2em; color: var(--body-text-color); font-style: italic; max-width: min(80vw, 80vh); margin: 1em auto auto auto;">Arlith
 		is a free communication platform.</div>
 	<div class="button-bar">
 		<a class="button" href="#Information">What is this?</a>
@@ -210,7 +215,7 @@ div {
 				<p>
 					Two users download the client and create an account, then friend
 					each other in Arlith. They can then create
-					<span style="color: white;">private communication channels</span>
+					<span style="color: var(--header-text-color);">private communication channels</span>
 					with each other that they can use to communicate through. Two users
 					can friend each other by username.
 				</p>
@@ -219,12 +224,12 @@ div {
 			<div>
 				<h2>Basic Features</h2>
 				<p>
-					<span style="color: white;">Arlith currently supports styled
+					<span style="color: var(--header-text-color);">Arlith currently supports styled
 						direct messaging.</span> You can embolden, italicize, change the
 					font, or color of any parts of messages you send to others.
 				</p>
 				<p>
-					There is planned support for <span style="color: white;">group
+					There is planned support for <span style="color: var(--header-text-color);">group
 						communication</span>, both in "Group Threads" (similar to Skype or
 					Discord groups) and Communities, (similar to Discord's servers). If
 					you'd like to know more details about what's in the app or what's
@@ -276,7 +281,7 @@ div {
 	<div class="section shadow" style="margin-bottom: 0;">
 		<div>You've reached the end of the page.</div>
 		<br>
-		<div style="text-align: left; color: gray;">
+		<div id="Footer">
 			<i>We have no social media links through which you can follow us,
 				but feel free to check out the project's <a
 				href="https://github.com/Palanath/Arlith">GitHub</a>.

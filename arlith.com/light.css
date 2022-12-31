@@ -1,0 +1,10 @@
+:root {
+	--header-text-color: black;
+	--body-text-color: #2C2C2C;/* Inverse of lightgray */
+	--dim-text: #7F7F7F;
+	--very-dim-text: #969696;
+
+	--background-color: #EBEBEB;
+	--shadow-color: #FFF8;
+	--button-hover-color: white;
+}
