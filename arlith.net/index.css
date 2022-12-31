@@ -238,6 +238,15 @@ p>span[info] {
 	color: dimgray;
 	margin: .2em 20px;
 }
+p>span[info].inline {
+	font-size: 0;
+	position: static;
+	visibility: visible;
+	display: inline;
+	color: inherit;
+	transition: font-size .6s;
+	margin: 0;
+}
 p>span[info].visible {
 	opacity: 1;
 	position: static;
@@ -245,10 +254,8 @@ p>span[info].visible {
 	display: block;
 }
 p>span[info].visible.inline {
+	font-size: .8em;
 	display: inline;
-	font-size: 1em;
-	color: inherit;
-	font-style: normal;
 }
 p>span[info].blurb.visible {
 	--blurb-hue: 196deg;
