@@ -65,6 +65,21 @@
 	multiple frontends which are designed for different purposes, and
 	different frontends can be selected during launch time.</p>
 <p>
+	The Frontend API considers a frontend to be composed of a main class,
+	that extends the <code>Frontend</code> type. This main class is where
+	the state, including instances of backend API objects, is stored and
+	shared between other components of the Frontend.<sup info=1></sup> <span class="blurb"
+		info=1>The main Frontend class is structured like this
+		because Frontends usually each act as a user interface for <i>some
+			component(s)</i> in the backend code of Arlith, so a Frontend often
+		has to share state and instances of backend API code between different
+		GUIs or Scenes.
+	</span> Most (GUI-based) Frontends have multiple GUI classes, each
+	representing one specific part (AKA page or window) of the GUI. JavaFX
+	denotes these parts <em>Scenes</em>. The Frontend class is expected to
+	be instantiated by one of Arlith's launchers, be configured by that
+	launcher, and then be <code>launched</code>
+</p>
 <?php
 
 t();
