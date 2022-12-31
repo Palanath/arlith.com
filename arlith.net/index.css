@@ -179,6 +179,11 @@ figcaption {
 /* Emphasis */
 em {
 	color: white;
+	font-weight: bold;
+}
+div.blurb>i, p>span[info].visible:not(.inline)>i, div.blurb>em, p>span[info].visible:not(.inline)>em {
+	font-style: normal;
+	color: white;
 }
 
 /* Blurbs */
