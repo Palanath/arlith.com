@@ -26,12 +26,21 @@ window.onload = function() {
         		fig.classList.add("expanded");
         }
 	}
+
+	for (let ref of document.querySelectorAll("p>sup[info]")) {
+		let element = document.querySelector("p>span[info='"+ref.getAttribute("info")+"']");
+		ref.onclick = function() {
+    		if (element.classList.contains("visible"))
+    			element.classList.remove("visible");
+    		else
+    			element.classList.add("visible");
+		};
+	}
 }
 </script>
 </head>
 <body>
 <?php
-
 }
 
 /**
@@ -41,4 +50,6 @@ function t()
 {
     ?>
 </body>
-</html><?php }
+</html><?php
+
+}
