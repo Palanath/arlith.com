@@ -11,7 +11,7 @@
 	--dim-text: gray;
 	--very-dim-text: dimgray;
 
-	--background-color: #141414;
+	--background: #141414;
 	--shadow-color: #0008;
 	--button-hover-color: black;/* Inverse of --header-text-color. */
 }
@@ -28,7 +28,7 @@
 body {
 	margin: 0;
 	width: 100%;
-	background: var(--background-color);
+	background: var(--background);
 	--hue-shift-amount: calc(var(--scroll-amount, 0) * 1deg);
 	color: var(--body-text-color);
 }
