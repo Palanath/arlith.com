@@ -12,7 +12,13 @@
 </ul>
 <h3>Documentation Pages</h3>
 <ul>
-	<li><a href="/frontend-api">Frontend API</a>
-
+	<li><a href="/frontend-api">Frontend API</a> - Delineation of division
+		of Arlith's frontend into conceptual and programmatic parts &amp;
+		framework for designing new parts of the frontend.</li>
+	<li><a href="/user-accounts">User Accounts</a> - Docs on properties
+		associated with user accounts, (e.g. usernames, emails, etc.),
+		including purpose, syntax, etc.</li>
 </ul>
-<?php t();
+<?php
+
+t();
