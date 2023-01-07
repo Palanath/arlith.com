@@ -1,4 +1,11 @@
-<?php h("Arlith Wiki - Wiki index page/table of contents");?>
+<?php h1("Arlith Wiki - Wiki index page/table of contents");?>
+<style>
+body>ul>li {
+	padding-left: 5em;
+	text-indent: -5em;
+}
+</style>
+<?php h2();?>
 <h1>Wiki Index</h1>
 <p>This page exhaustively indexes every page on the wiki. It serves as a
 	reference for where each other page is located.</p>
