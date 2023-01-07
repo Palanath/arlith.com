@@ -22,7 +22,7 @@
 	<li>Must be at least 3 characters long,</li>
 	<li>Must be at most 20 characters long,</li>
 	<li>Must not contain a <code>#</code>, <code>@</code>, <code>&lt;</code>,
-		<code>&gt;</code>, nor <code>'</code> character.
+		<code>&gt;</code>, nor a <code>'</code> character.
 	</li>
 </ul>
 <h2>Emails</h2>
