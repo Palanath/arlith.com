@@ -16,11 +16,42 @@
 	index page is considered an exhaustive list of all the pages on the
 	wiki.
 </p>
+<h2>Adding Pages</h2>
+<p>The formal process for adding a page is to:</p>
+<ol>
+	<li>Create its <code>index.php</code> file in its directory (e.g.
+		creating the file <code>arlith.net/editing/index.php</code>),
+	</li>
+	<li>Apply the template to the <code>index.php</code> file, and
+	</li>
+	<li>Fill out the page's contents.</li>
+</ol>
+<h3>Applying the Template</h3>
 <p>
-	The formal process for adding a page is to create its <code>index.php</code>
-	file in its directory, specify in the file that the wiki template
-	should be applied, and then to fill out the page's contents.
+	Each file under the wiki's root directory (<code>arlith.net/</code>)
+	automatically gets the PHP boilerplate template file included, (meaning
+	the PHP processor processes the boilerplate file automatically). The
+	template simply needs to be invoked from the <code>index.php</code>
+	file for the page.
 </p>
+<p>
+	The template consists of two function invocations. One for the <em>header</em>
+	of the page, which takes the page title as an argument, and one for the
+	<em>tail</em> of the page. An example of a very simple <code>index.php</code>
+	page file that invokes these two functions is as follows:
+</p>
+<pre><code><span style="color: red;">&lt;?php</span> <span
+		style="color: hsl(240, 100%, 80%);">h("Arlith Wiki - Blank demonstration page");</span><span
+		style="color: red;">?></span>
+<span style="color: #50A0A0;">&lt;h1&gt;</span>Blank Demonstration Page<span
+		style="color: #50A0A0;">&lt;/h1&gt;</span>
+<span style="color: #50A0A0;">&lt;p&gt;</span>This is some page content in a paragraph under the title.<span
+		style="color: #50A0A0;">&lt;/p&gt;</span>
+<span style="color: red;">&lt;?php</span> <span
+		style="color: hsl(240, 100%, 80%);">t();</span></code></pre>
+<p>That page would appear as so:</p>
+<iframe style="min-height: 200px;" seamless src="demo-page.php"
+	width="100%" style="border: none;"></iframe>
 <h2>Styled HTML Elements</h2>
 <p>The wiki's content is written in HTML and is styled with a
 	wiki-themed CSS stylesheet. Not all HTML elements are handled by the
@@ -163,11 +194,16 @@ private int j = 10;</code></pre></td>
     &lt;img src="https://arlith.com/logo.svg" alt="SVG line art of a drawn, upwards-facing feather."&gt;
     &lt;figcaption&gt;Arlith's logo, as an SVG icon. The icon depicts a feather.&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre></td>
-		<td><figure class="float-left" style="--default-size: 200px; --expanded-size: 600px;">
-    <h3>Arlith Logo</h3>
-    <img src="https://arlith.com/logo.svg" alt="SVG line art of a drawn, tilted feather.">
-    <figcaption>Arlith's logo, as an SVG icon. The icon depicts a feather.</figcaption>
-</figure></td>
+		<td><figure class="float-left"
+				style="-default-size: 200px; - -expanded-size: 600px;">
+				<h3>Arlith Logo</h3>
+				<img src="https://arlith.com/logo.svg"
+					alt="SVG line art of a drawn, tilted feather.">
+				<figcaption>Arlith's logo, as an SVG icon. The icon depicts a
+					feather.</figcaption>
+			</figure></td>
 	</tr>
 </table>
-<?php t();
+<?php
+
+t();
