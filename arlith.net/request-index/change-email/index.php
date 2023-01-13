@@ -31,36 +31,17 @@
 		<th>Formal Type</th>
 		<th>Description</th>
 	</tr>
-	<tr data-error=syntax>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr data-error=rate-limit>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr data-error=server>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr data-error=restricted>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
 	<tr>
 		<td>Create Account</td>
 		<td>CreateAccountError</td>
 		<td>If there is a syntactic or other error with the username. See
-			below<sup>[1]</sup> for details.
+			below<sup><a href="#i1">[1]</a></sup> for details.
 		</td>
 	</tr>
-	<tr data-error=illegal-error>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
+	<?php addGenericRequestErrors();?>
 </table>
+<p>
+	<sup id="i1">[1]</sup>This request results in a {@link
+	CreateAccountError} if the user attempts to change their email address
+	to a new email that one could not create an account with. Specifically,
+</p>
