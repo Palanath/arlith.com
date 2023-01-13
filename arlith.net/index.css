@@ -91,7 +91,7 @@ table.lw {/* "Lightweight" tables (as used in the styling page) */
 	border-spacing: 5px 0;
 	max-width: 600px; /* Default max width. Can be unset w/ .unrestricted-width class (or inline, I suppose). */
 }
-table.lw.unrestricted-width {
+table.lw.unrestricted-width, table.lw.unrestricted-width td>pre:only-child {
 	max-width: unset;
 }
 table.lw th {
@@ -112,6 +112,7 @@ table td>pre:only-child {/* Code block as an only child of a td does not render 
 	border: unset;
 	background-color: unset;
 	margin: 0;
+	max-width: 400px;
 }
 table td.rowheader {
 	font-weight: bold;
