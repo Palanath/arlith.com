@@ -195,7 +195,7 @@ private int j = 10;</code></pre></td>
     &lt;figcaption&gt;Arlith's logo, as an SVG icon. The icon depicts a feather.&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre></td>
 		<td><figure class="float-left"
-				style="-default-size: 200px; - -expanded-size: 600px;">
+				style="--default-size: 200px; --expanded-size: 600px;">
 				<h3>Arlith Logo</h3>
 				<img src="https://arlith.com/logo.svg"
 					alt="SVG line art of a drawn, tilted feather.">
