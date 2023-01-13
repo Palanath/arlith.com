@@ -266,6 +266,12 @@ p>span[info].blurb.visible {
 
 /* REQUEST INDEX PAGES */
 
+table.request-errors, table.request-errors td, table.request-errors tr, table.request-errors th {
+	border-color: #a30000;
+}
+table.request-errors, table.request-errors td, table.request-errors tr {
+	color: #db2a2a;
+}
 
 table.request-parameters, table.request-parameters td, table.request-parameters tr,
 	table.request-parameters th {
@@ -274,12 +280,12 @@ table.request-parameters, table.request-parameters td, table.request-parameters 
 table.request-parameters, table.request-parameters td, table.request-parameters tr {
 	color: #2dcebf;
 }
-table.request-parameters td {
+table.request-parameters td, table.request-errors td {
 	background-color: #0A0A0A;
 }
 
 /* Specific Table Elements */
-table.request-parameters td:nth-child(2) {
+table.request-parameters td:nth-child(2), table.request-errors td:nth-child(2) {
 	font-family: monospace;
 	font-size: 1.1em;
 }
