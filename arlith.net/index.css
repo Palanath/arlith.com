@@ -285,55 +285,10 @@ table.request-parameters td, table.request-errors td {
 }
 
 /* Specific Table Elements */
-table.request-errors tr[data-error] td {/* Generic Errors */
+table.request-errors tr.generic-error td {/* Generic Errors */
 	border-color: currentcolor;
 	background-color: #090000;
 	color: darkred;
-}
-table.request-errors tr[data-error=syntax]>td:first-child::before {
-	content: "Syntax";
-}
-table.request-errors tr[data-error=syntax]>td:nth-child(2)::before {
-	content: "SyntaxError";
-}
-table.request-errors tr[data-error=syntax]>td:nth-child(3)::before {
-	content: "If the request is syntactically invalid.";
-}
-table.request-errors tr[data-error=rate-limit]>td:first-child::before {
-	content: "Rate Limit";
-}
-table.request-errors tr[data-error=rate-limit]>td:nth-child(2)::before {
-	content: "RateLimitError";
-}
-table.request-errors tr[data-error=rate-limit]>td:nth-child(3)::before {
-	content: "If the server attempts to rate limit the connection.";
-}
-table.request-errors tr[data-error=server]>td:first-child::before {
-	content: "Server";
-}
-table.request-errors tr[data-error=server]>td:nth-child(2)::before {
-	content: "ServerError";
-}
-table.request-errors tr[data-error=server]>td:nth-child(3)::before {
-	content: "If the server encounters an unknown, unexpected error.";
-}
-table.request-errors tr[data-error=restricted]>td:first-child::before {
-	content: "Restricted";
-}
-table.request-errors tr[data-error=restricted]>td:nth-child(2)::before {
-	content: "RestrictedError";
-}
-table.request-errors tr[data-error=restricted]>td:nth-child(3)::before {
-	content: "If the current connection does not have permission to invoke this request.";
-}
-table.request-errors tr[data-error=illegal-error]>td:first-child::before {
-	content: "Illegal Protocol Error";
-}
-table.request-errors tr[data-error=illegal-error]>td:nth-child(2)::before {
-	content: "IllegalCommunicationProtocolException";
-}
-table.request-errors tr[data-error=illegal-error]>td:nth-child(3)::before {
-	content: "Denotes that the server responded with an error that should not have been sent. This is usually indicative that the client and server are running different versions (and that the specification for this request was updated between the versions). If this is thrown, it will wrap the unexpected CommunicationProtocolError.";
 }
 
 table.request-parameters td:nth-child(2), table.request-errors td:nth-child(2) {
