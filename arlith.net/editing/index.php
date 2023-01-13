@@ -1,4 +1,11 @@
-<?php h("Arlith Wiki - Editing the wiki");?><h1>Wiki Editing</h1>
+<?php h1("Arlith Wiki - Editing the wiki");?>
+<style>
+#BlurbIntensityList>li>code {
+    color: hsl(var(--blurb-hue), 100%, 50%);
+}
+</style>
+<?php h2();?>
+<h1>Wiki Editing</h1>
 <p>
 	The wiki is conceptually organized into <i>pages</i>, each of which
 	expounds information on a specific topic. Editing the wiki consists of
@@ -204,6 +211,32 @@ private int j = 10;</code></pre></td>
 			</figure></td>
 	</tr>
 </table>
+<h3>Blurbs</h3>
+<p>Blurbs act as an informational element which typically asserts some
+	interesting, not-well-known, or non-obvious information. Blurbs are
+	colored and styled according to the theme of what they convey, which
+	should be expressed through CSS class.</p>
+<p>
+	Content-wise, a blurb is a <code>&lt;div&gt;</code> element with the <code>blurb</code>
+	CSS class that also (optionally) specifies a thematic level of
+	intensity. The level of intensity is also selected via CSS class, and
+	must be one of:
+</p>
+<ul id="BlurbIntensityList">
+	<li><code class="info">info</code></li>
+	<li><code class="warn">warn</code></li>
+	<li><code class="urgent">urgent</code></li>
+</ul>
+<p>Here's an example of how an <code>info</code> blurb would appear in a document:</p>
+<table class="lw" style="max-width: 1000px;"><tr>
+		<th>HTML</th>
+		<th>Rendered Content</th>
+	</tr>
+	<tr>
+	<td><pre><code>&lt;p&gt;This is a paragraph that describes some primary content. This text includes descriptions and explanation that is expected (i.e. it answers most questions that one might have opened this page to solve).&lt;/p&gt;
+&lt;div class="blurb info"&gt;This is a blurb that interjects some content that a reader might not have been aware of or expected to read, but would often be important or even critical.&lt;/div&gt;</code></pre></td><td><p>This is a paragraph that describes some primary content. This text includes descriptions and explanation that is expected (i.e. it answers most questions that one might have opened this page to solve).</p>
+<div class="blurb info">This is a blurb that interjects some content that a reader might not have been aware of or expected to read, but would often be important or even critical.</div></td>
+	</tr></table>
 <?php
 
 t();
