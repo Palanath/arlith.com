@@ -31,26 +31,25 @@
 		<th>Formal Type</th>
 		<th>Description</th>
 	</tr>
-	<tr>
-		<td>Syntax</td>
-		<td>SyntaxError</td>
-		<td>If the request is syntactically invalid.</td>
+	<tr data-error=syntax>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
-	<tr>
-		<td>Rate Limit</td>
-		<td>RateLimitError</td>
-		<td>If the server attempts to rate limit the connection.</td>
+	<tr data-error=rate-limit>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
-	<tr>
-		<td>Server</td>
-		<td>ServerError</td>
-		<td>If the server encounters an unknown, unexpected error.</td>
+	<tr data-error=server>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
-	<tr>
-		<td>Restricted</td>
-		<td>RestrictedError</td>
-		<td>If the current connection does not have permission to invoke this
-			request.</td>
+	<tr data-error=restricted>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Create Account</td>
@@ -59,13 +58,9 @@
 			below<sup>[1]</sup> for details.
 		</td>
 	</tr>
-	<tr>
-		<td>Illegal Protocol Err</td>
-		<td>IllegalCommunicationProtocolException</td>
-		<td>Denotes that the server responded with an error that should not
-			have been sent. This is usually indicative that the client and server
-			are running different versions (and that the specification for this
-			request was updated between the versions). If this is thrown, it will
-			wrap the unexpected CommunicationProtocolError.</td>
+	<tr data-error=illegal-error>
+		<td></td>
+		<td></td>
+		<td></td>
 	</tr>
 </table>
