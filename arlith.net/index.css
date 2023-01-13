@@ -262,3 +262,41 @@ p>span[info].blurb.visible {
 	--blurb-hue: 196deg;
 	color: inherit;
 }
+
+
+/* REQUEST INDEX PAGES */
+
+
+table.request-parameters, table.request-parameters td, table.request-parameters tr,
+	table.request-parameters th {
+	border-color: #50A0A0;
+}
+table.request-parameters, table.request-parameters td, table.request-parameters tr {
+	color: #2dcebf;
+}
+table.request-parameters td {
+	background-color: #0A0A0A;
+}
+
+/* Specific Table Elements */
+table.request-parameters td:nth-child(2) {
+	font-family: monospace;
+	font-size: 1.1em;
+}
+table.request-parameters td:nth-child(4) {
+	text-align: center;
+}
+table.request-parameters td:nth-child(4)::before {
+	content: attr(data-optional);
+	font-variant: small-caps;
+}
+table.request-parameters td:nth-child(4)[data-optional=no] {
+	color: red;
+	border-color: currentcolor;
+	background: linear-gradient(to bottom right, #0A0A0A 50%, #280808 50%);
+}
+table.request-parameters td:nth-child(4)[data-optional=yes] {
+	color: #00f500;
+	border-color: currentcolor;
+	background: linear-gradient(to bottom right, #0A0A0A 50%, #082708 50%);
+}
