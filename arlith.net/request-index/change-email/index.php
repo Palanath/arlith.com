@@ -35,13 +35,13 @@
 		<td>Create Account</td>
 		<td>CreateAccountError</td>
 		<td>If there is a syntactic or other error with the username. See
-			below<sup><a href="#i1">[1]</a></sup> for details.
+			below<sup class="pagelink"><a href="#pagelink-email-syntax">[1]</a></sup> for details.
 		</td>
 	</tr>
 	<?php addGenericRequestErrors();?>
 </table>
 <p>
-	<sup id="i1">[1]</sup>This request results in a {@link
+	<sup id="pagelink-email-syntax">[1]</sup>This request results in a {@link
 	CreateAccountError} if the user attempts to change their email address
 	to a new email that one could not create an account with. Specifically,
 </p>
