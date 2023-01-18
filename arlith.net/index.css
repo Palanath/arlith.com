@@ -222,7 +222,7 @@ p>sup[info]:active {
 	transition: unset;
 	color: red;
 }
-p>span::before {
+p>span[info]::before {
 	content: '[' attr(info) ']';
 	color: gold;
 	vertical-align: super;
