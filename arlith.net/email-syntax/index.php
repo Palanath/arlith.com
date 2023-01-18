@@ -79,12 +79,13 @@
                     <span class="chars">'~'</span></code></pre>
 <p>
 	Quoted strings are strings beginning and ending with double-quotation
-	marks (<code>"</code>). Quoted strings may contain any character, but
-	every contained quotation mark, that is not the very first or last
-	character, must be "escaped" by being prepended with one backslash (<code>\</code>).
-	Additionally, only all backslashes whose purposes are not to escape a
-	quotation character or another backslash, must be, themselves, escaped.<sup
-		info=1></sup><span info=1>RFC notes that the local-part of an email
+	marks (<code>"</code>).<sup info=1></sup> Quoted strings may contain
+	any character, but every contained quotation mark, that is not the very
+	first or last character, must be "escaped" by being prepended with one
+	backslash (<code>\</code>). Additionally, only all backslashes whose
+	purposes are not to escape a quotation character or another backslash,
+	must be, themselves, escaped. (This rule is only partially enforced.<sup
+		info=2></sup>)<span info=1>RFC notes that the local-part of an email
 		address should be interpreted by the mail server. This means that
 		unusual email addresses, such as <code>"john.doe"@gmail.com</code>
 		will be syntactically validated by Arlith, but considered literally.
@@ -97,6 +98,14 @@
 		syntactical reasons (like backslashes meant for escaping) will not be
 		removed once the email address is parsed. Functionality to allow the
 		user to manipulate this better may be added in the future.
+	</span><span info=2>Arlith requires that literal backslashes in quoted
+		local parts be escaped, but does not reject emails which use
+		backslashes to "escape" characters which need not be escaped. For
+		example, according to the above requirements, the email address <code>"joe\shmoe"@arlith.org</code>
+		is syntactically invalid, because the <code>\</code> character
+		"escapes" the <code>s</code> even though the <code>s</code> does not
+		need escaping. Arlith, however, will accept the string as a valid
+		email address.
 	</span>
 </p>
 <p>
