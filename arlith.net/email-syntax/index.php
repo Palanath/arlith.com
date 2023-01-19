@@ -46,11 +46,8 @@
 		class="production">local-part</span> <span class="chars">'@'</span> <span
 		class="production">domain</span>
 <span class="production">local-part</span>      =   <span
-		class="optional">[<span class="chars">'('</span><span
-			class="production">comment</span><span class="chars">')'</span>]</span> <span
-		class="production">dot-atom</span> <span class="optional">[<span
-			class="chars">'('</span><span class="production">comment</span><span
-			class="chars">')'</span>]</span> / <span class="described-production">quoted-string</span>
+		class="production">dot-atom</span> / <span
+		class="described-production">quoted-string</span>
 <span class="production">domain</span>          =   <span
 		class="described-production">domain-name</span> / <span class="chars">'['</span><span
 		class="production">ip-addr</span><span class="chars">']'</span>
@@ -109,11 +106,23 @@
 	</span>
 </p>
 <p>
+	Colloquially, an email address is the <code>local-part</code> followed
+	by an <code>@</code> symbol and a <code>domain</code> address to locate
+	the mail server. The local-part can be either a quoted string, allowing
+	it to contain essentially any character, or a <code>dot-atom</code>. A
+	dot-atom can be any sequence of <code>atext</code> characters with dot
+	characters (<code>.</code>) <i>in between</i> (not at either endpoint),
+	but <i>not consecutively</i>; (two <code>.</code> characters cannot
+	touch).
+</p>
+<p>
 	Domain names should be any valid domain name. Currently, Arlith parses
 	this by simply checking for at least two parts, each separated by a dot
-	(<code>.</code>). Each part should be composed of alphanumeric
-	characters and hyphens, but such that no part should begin or end with
-	a hyphen.
+	(<code>.</code>) (technically referred to as <i>labels</i>). Each part
+	should be composed of alphanumeric characters and hyphens, but such
+	that no part should begin or end with a hyphen. Furthermore, no part
+	should exceed 63 characters in length and a whole domain name should
+	not exceed 253 characters.
 </p>
 <p>
 	IPv4 addresses should be a valid IPv4 string. The <code>ip-v6</code>
