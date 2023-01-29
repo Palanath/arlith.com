@@ -25,6 +25,8 @@ body>ul>li {
 	<li><a href="/user-accounts">User Accounts</a> - Docs on properties
 		associated with user accounts, (e.g. usernames, emails, etc.),
 		including purpose, syntax, etc.</li>
+	<li><a href="/email-syntax">Email Syntax</a> - Documentation on the
+		syntax of email addresses as Arlith interprets them.</li>
 </ul>
 <?php
 
