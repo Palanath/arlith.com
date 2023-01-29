@@ -62,7 +62,8 @@
 	allocated to user accounts will discriminators of length
 	greater-than-four start being allocated for that username. The server
 	need not, but is encouraged to, allocate all discriminators of length 5
-	before moving on to granting discriminators of length 6.</p>
+	before moving on to granting discriminators of length 6, and likewise
+	for lengths 6 and 7, and so on and so forth.</p>
 <h4>Default Implementation</h4>
 <p>The default implementation of the discriminator generator for the
 	server uses the following algorithm:</p>
