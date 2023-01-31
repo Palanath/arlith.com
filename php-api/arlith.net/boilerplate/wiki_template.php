@@ -29,8 +29,8 @@ window.onload = function() {
         }
 	}
 
-	for (let ref of document.querySelectorAll("p>sup[info]")) {
-		let element = document.querySelector("p>span[info='"+ref.getAttribute("info")+"']");
+	for (let ref of document.querySelectorAll("sup[info]")) {
+		let element = document.querySelector("span[info='"+ref.getAttribute("info")+"']");
 		ref.onclick = function() {
     		if (element.classList.contains("visible"))
     			element.classList.remove("visible");
