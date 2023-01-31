@@ -84,6 +84,19 @@
 					that the presentation is shown to the user.</span></li>
 		</ul>
 	</li>
+	<li>Finally, attach the/each presentation to its Theme by editing the
+		corresponding <code>Theme</code> subclass so that its <code>supply(Logic)</code>
+		method returns an instance of <code>NamePresentationImpl</code>
+		whenever any subtype of <code>NameLogic</code> is provided.<sup info=3></sup><span
+		info=3>This most often looks similar to:<pre style="font-size: 1.1em;"><code>@SuppressWarnings("unchecked")
+@Override
+public &lt;P extends Presentation&lt;L&gt;, L extends Logic&lt;P&gt;&gt; P <span
+					style="color: gold;">supply(L userInterface)</span> {
+	if (userInterface instanceof <span style="color: green;">NameLogic</span>)
+		return (P) new <span style="color: hotpink;">NamePresentationImpl</span>((<span style="color: green;">NameLogic</span>) userInterface);
+	return null;
+}</code></pre></span>
+	</li>
 </ol>
 <h2>Implementation Notes</h2>
 <p>
